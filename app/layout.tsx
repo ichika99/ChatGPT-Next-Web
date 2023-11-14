@@ -34,6 +34,7 @@ export default function RootLayout({
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
+        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=KA8b0eKrDEwPUlz2&ck=KA8b0eKrDEwPUlz2" async></script>
       </head>
       <body>{children}</body>
     </html>
