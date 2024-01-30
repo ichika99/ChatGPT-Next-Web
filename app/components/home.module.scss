@@ -49,6 +49,16 @@
   position: relative;
   transition: width ease 0.05s;
 
+  .sidebar-ichika{
+    font-size: 12px;
+    line-height: 18px;
+
+    a{
+      text-decoration: none;
+      color: rgb(115, 187, 255);
+    }
+  }
+
   .sidebar-header-bar {
     display: flex;
     margin-bottom: 20px;

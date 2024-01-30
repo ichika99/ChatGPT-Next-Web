@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
+import AfdianIcon from "../icons/afdian.svg";
 
 import Locale from "../locales";
 
@@ -198,7 +199,13 @@ export function SideBar(props: { className?: string }) {
       >
         <ChatList narrow={shouldNarrow} />
       </div>
-
+      <div className={styles["sidebar-ichika"]}>
+        Modified by &nbsp;
+        <Link target="_blank" to="https://github.com/ichika99/ChatGPT-Next-Web">
+          ichika
+        </Link>
+        ，如有疑问请联系xkk
+      </div>
       <div className={styles["sidebar-tail"]}>
         <div className={styles["sidebar-actions"]}>
           <div className={styles["sidebar-action"] + " " + styles.mobile}>
@@ -219,6 +226,15 @@ export function SideBar(props: { className?: string }) {
           <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
               <IconButton icon={<GithubIcon />} shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a
+              href="https://afdian.net/a/ichika"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton icon={<AfdianIcon />} shadow />
             </a>
           </div>
         </div>
