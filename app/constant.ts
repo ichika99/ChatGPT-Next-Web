@@ -115,34 +115,6 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "gpt-3.5-turbo",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-turbo-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gemini-pro",
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  },
-  /*
-  {
     name: "gpt-4",
     available: true,
     provider: {
@@ -295,7 +267,6 @@ export const DEFAULT_MODELS = [
       providerType: "google",
     },
   },
-  */
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
